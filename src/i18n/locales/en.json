@@ -1,0 +1,197 @@
+{
+  "nav": {
+    "about": "About",
+    "membership": "Membership",
+    "rules": "Rules",
+    "contact": "Contact",
+    "brand": "Tranquility",
+    "brandSub": "SOCIAL CLUB"
+  },
+  "home": {
+    "preBenefits": "Tranquility Benefits",
+    "benefitsTitle": "Why join Tranquility",
+    "benefitsIntro": "Tranquility is a private, members-only social club focused on wellbeing, calm, and responsible community. Below are a few reasons members choose to join our space.",
+    "watchPre": "Watch a video",
+    "watchTitle": "See the space",
+    "watchIntro": "A short tour of our lounge, events, and member-first approach.",
+    "testimonialsPre": "Testimonials",
+    "testimonialsTitle": "What members say",
+    "testimonialsIntro": "Hear from our members about the calm, respect, and community they experience at Tranquility.",
+    "faqPre": "FAQ",
+    "faqTitle": "Common questions",
+    "faqIntro": "Answers to common membership and visit questions. If you need more details, visit the Contact page or request membership."
+  },
+  "hero": {
+    "title": "A private space for calm & community",
+    "subtitle": "A members-only social club in Spain focused on wellbeing, education and responsible enjoyment.",
+    "cta": "Request Membership",
+    "imageAlt": "Tranquility lounge",
+    "trustedPrefix": "Trusted by",
+    "trustedCount": "2000+ adult members",
+    "trustedSuffix": "in our private community.",
+    "feature1": "Responsible Use",
+    "feature2": "Community First",
+    "feature3": "Private & Safe"
+  },
+  "benefits": {
+    "one": {
+      "title": "A calm, private space",
+      "desc": "Our lounge and events are designed to promote relaxation, learning, and respectful socialising in a private members-only environment.",
+      "bullets": [
+        { "title": "Mindful gatherings", "desc": "Curated events and sessions focused on wellbeing and education." },
+        { "title": "Curated programming", "desc": "Workshops, talks, and small-group experiences for members." },
+        { "title": "Private membership", "desc": "A vetted, adult-only community that prioritises privacy and respect." }
+      ]
+    },
+    "two": {
+      "title": "Membership & safety",
+      "desc": "Membership ensures a safe, private environment supported by clear rules and staff oversight.",
+      "bullets": [
+        { "title": "Private access", "desc": "Entry is limited to approved members to ensure discretion and safety." },
+        { "title": "Member-focused operations", "desc": "Staffed events and clear policies keep the space welcoming for all." },
+        { "title": "Wellbeing first", "desc": "Practices and spaces that prioritize relaxation and responsible enjoyment." }
+      ]
+    }
+  },
+  "cta": {
+    "title": "Ready to join Tranquility?",
+    "subtitle": "Become part of a calm, private community focused on wellbeing.",
+    "button": "Request Membership"
+  },
+  "faq": {
+    "items": [
+      { "question": "Who can join Tranquility?", "answer": "Tranquility is a private, members-only club for adults. Membership is subject to application and approval to ensure a respectful community." },
+      { "question": "How do I apply?", "answer": "Start by clicking 'Request Membership' on the site or contacting us via the Contact page. Our team reviews applications and will respond with next steps." },
+      { "question": "What should I bring when visiting?", "answer": "Please bring a valid ID for age verification. Follow any event-specific guidance provided during booking." },
+      { "question": "Are events private?", "answer": "Yes — events and gatherings are for members only unless explicitly listed as public. Photos or sharing without consent is not permitted." }
+    ]
+  },
+  "testimonials": {
+    "items": [
+      { "text": "\"A calm, respectful environment — perfect for meaningful conversations and learning.\"", "mark": "— Member since 2022", "name": "Ana M.", "title": "Member" },
+      { "text": "\"Thoughtful events and a welcoming community — I keep coming back.\"", "mark": "— Local member", "name": "Carlos R.", "title": "Member" },
+      { "text": "\"Privacy and respect are central here — a rare find.\"", "mark": "— New member", "name": "Lucia S.", "title": "Member" }
+    ]
+  },
+  "widget": {
+    "openAria": "Open WhatsApp chat",
+    "header": { "title": "How can we help?", "subtitle": "We usually respond in a few hours" },
+    "form": {
+      "fullName": { "label": "Full Name", "placeholder": "John Doe", "errors": { "required": "Full name is required" } },
+      "email": { "label": "Email Address", "placeholder": "you@company.com", "errors": { "required": "Enter your email", "pattern": "Please enter a valid email" } },
+      "message": { "label": "Your Message", "placeholder": "Your Message", "errors": { "required": "Enter your Message" } },
+      "submit": "Send Message",
+      "clientError": "Client Error. Please check the console.log for more info"
+    },
+    "hidden": { "subject": "{name} sent a message from Tranquility", "fromName": "Tranquility Website" },
+    "poweredBy": { "prefix": "Powered by" },
+    "success": { "title": "Message sent successfully", "back": "Go back" },
+    "error": { "title": "Oops, Something went wrong!", "back": "Go back" }
+  },
+  "about": {
+    "title": "About Tranquility",
+    "subtitle": "A peaceful, private community created for adults seeking calm, connection, and a safe social environment.",
+    "cta": "Request Membership",
+    "imageAlt": "Tranquility logo",
+    "missionTitle": "Our Mission",
+    "missionText": "At Tranquility, our mission is to offer a calm, welcoming, and responsible environment for adults. We focus on mindfulness, community, and well-being — creating a peaceful escape from the noise of everyday life.",
+    "privateTitle": "A Private Membership Community",
+    "privateText": "Tranquility operates strictly as a private, members-only social association in accordance with local regulations. Entry is reserved for approved adults, ensuring privacy, safety, and responsible participation at all times.",
+    "noteLabel": "Note:",
+    "noteText": "We are not open to the general public — membership is required to access the club.",
+    "experienceTitle": "The Tranquility Experience",
+    "experienceText": "Inside our space, members can enjoy a peaceful lounge atmosphere, respectful community, and a beautifully designed environment meant to promote relaxation and mindfulness.",
+    "valuesTitle": "Our Values",
+    "values": {
+      "respect": { "title": "Respect", "desc": "for people, time, space, and well-being." },
+      "community": { "title": "Community", "desc": "we grow stronger together." },
+      "wellbeing": { "title": "Well-Being", "desc": "we promote mindfulness and balance." },
+      "privacy": { "title": "Privacy", "desc": "discretion is a core part of our culture." }
+    },
+    "joinTitle": "Ready to Join Us?",
+    "joinText": "We welcome responsible adults who value calm, privacy, and connection.",
+    "joinButton": "Learn About Membership"
+  },
+  "membership": {
+    "title": "Membership",
+    "subtitle": "& Access",
+    "imageAlt": "Membership",
+    "lead": "Learn how to apply, what membership includes, and how we keep our community safe and private.",
+    "requestButton": "Request Membership",
+    "rulesButton": "Club Rules",
+    "howToApplyTitle": "How to Apply",
+    "howToApplyText": "Start by requesting membership using the button above. Our team reviews applications to ensure alignment with our community values and eligibility criteria.",
+    "howToApply": { "list": ["Complete the application form and provide valid ID.", "Share a short statement about why you want to join.", "Wait for review — response times typically range from 2–7 days."] },
+    "benefitsTitle": "Membership Benefits",
+    "benefitsText": "Members gain access to private events, a calm lounge space, curated learning sessions, and a respectful community of peers.",
+    "feesTitle": "Fees & Policies",
+    "feesText": "Membership involves a fee which helps sustain the space and programming. Fees and refund policies are provided during the application process.",
+    "requestWhatsapp": "Request Membership via WhatsApp"
+  },
+  "rules": {
+    "title": "Club Rules",
+    "subtitle": "",
+    "imageAlt": "Club rules",
+    "applyButton": "Apply for Membership",
+    "coreGuidelinesTitle": "Core Guidelines",
+    "guidelines": [
+      "Respect others: treat members and staff with courtesy and consideration at all times.",
+      "Privacy first: do not share personal information or photos of other members without consent.",
+      "Responsible conduct: illegal activities and disruptive behavior are strictly prohibited.",
+      "Age restriction: the club is for approved adults only. Always carry proof of age when requested.",
+      "Safety: follow staff instructions and venue safety guidelines."
+    ],
+    "admissionTitle": "Admission & Membership",
+    "admissionText": "Membership applications are reviewed to ensure a safe and respectful community. Admission may be refused or membership revoked at the discretion of the club for violations.",
+    "enforcementTitle": "Enforcement",
+    "enforcementText": "Staff are empowered to enforce rules and may ask members to leave if necessary. Serious breaches may result in permanent bans and legal action.",
+    "contactButton": "Questions or Concerns"
+  },
+  "contact": {
+    "title": "Contact Tranquility",
+    "subtitle": "",
+    "imageAlt": "Contact",
+    "subtitle": "Have questions or want to apply? Send us a message and we'll get back to you as soon as possible.",
+    "form": {
+      "name": { "label": "Name", "placeholder": "Your name" },
+      "email": { "label": "Email", "placeholder": "you@example.com" },
+      "message": { "label": "Message", "placeholder": "How can we help?" },
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Tranquility is a private members-only club focused on wellbeing, curated events, and a respectful community. Located in Spain, we prioritise privacy and responsible enjoyment.",
+    "copyright": "Copyright © {year}. Tranquility."
+  },
+  "legal": {
+    "termsTitle": "Terms of Service",
+    "termsIntro": "Welcome to Tranquility. By accessing or using our website and services you agree to these Terms of Service.",
+    "privacyTitle": "Privacy Policy",
+    "privacyIntro": "Tranquility is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights.",
+    "using": { "title": "Using Our Service", "text": "Tranquility provides a private-members club experience with information about events, membership and contact options. You agree to use the site lawfully and not to attempt to disrupt services or access restricted areas." },
+    "noSale": { "title": "No Sale of Goods", "text": "We do not sell any physical or digital products through this website." },
+    "liability": { "title": "Liability", "text": "The information on this site is provided \"as is\" and for general information only. Tranquility makes no warranties about the completeness or accuracy of this information and disclaims liability for damages arising from use of the site, to the fullest extent permitted by law." },
+    "contactTitle": "Contact",
+    "legalTitle": "Legal Notice",
+    "contact": "For questions contact us at {email}."
+  },
+  "privacy": {
+    "collectTitle": "Information We Collect",
+    "collectText": "We may collect contact information you provide (name, email, phone), communications you send to us, and technical data such as browser and device information when you visit our website. We collect only what is necessary to provide our services.",
+    "useTitle": "How We Use Information",
+    "useText": "We use personal data to respond to inquiries, manage membership requests, send important notices, and improve our services. We do not use personal data for automated profiling or sell personal information.",
+    "noSale": "We do not sell your personal information.",
+    "cookiesTitle": "Cookies and Tracking",
+    "cookiesText": "We may use cookies and similar technologies to operate the website and understand usage. You can control cookies via your browser settings.",
+    "rightsTitle": "Your Rights",
+    "rightsText": "Depending on your jurisdiction you may have rights to access, correct, export, or delete your personal data. To exercise these rights contact us at {email}.",
+    "securityTitle": "Data Retention & Security",
+    "securityText": "We retain personal data only as long as necessary and use reasonable administrative and technical safeguards to protect it. No method of transmission over the Internet is completely secure; we cannot guarantee absolute security.",
+    "contactTitle": "Contact"
+  },
+  "lang": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français"
+  }
+}

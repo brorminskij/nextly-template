@@ -1,55 +1,80 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "@/components/Container";
+import { useTranslation } from "@/i18n/TranslationProvider";
 
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
-import userThreeImg from "../../public/img/user3.jpg";
+// Use public image paths instead of static imports (avoids blurDataURL issues)
+const userOneImg = "/img/user1.jpg";
+const userTwoImg = "/img/user2.jpg";
+const userThreeImg = "/img/user3.jpg";
 
 export const Testimonials = () => {
+  const { t } = useTranslation();
+  const [remoteItems, setRemoteItems] = useState<null | Array<any>>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    fetch("/api/reviews")
+      .then((r) => r.json())
+      .then((j) => {
+        if (!mounted) return;
+        if (j?.reviews && Array.isArray(j.reviews) && j.reviews.length > 0) {
+          setRemoteItems(j.reviews);
+        }
+      })
+      .catch(() => {
+        // ignore and fallback to local strings
+      });
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  const localeItems = [
+    { text: t("testimonials.items.0.text"), mark: t("testimonials.items.0.mark"), image: userOneImg, name: t("testimonials.items.0.name"), title: t("testimonials.items.0.title") },
+    { text: t("testimonials.items.1.text"), mark: t("testimonials.items.1.mark"), image: userTwoImg, name: t("testimonials.items.1.name"), title: t("testimonials.items.1.title") },
+    { text: t("testimonials.items.2.text"), mark: t("testimonials.items.2.mark"), image: userThreeImg, name: t("testimonials.items.2.name"), title: t("testimonials.items.2.title") },
+  ];
+
+  const items = remoteItems
+    ? remoteItems.map((r, i) => ({
+        text: r.text,
+        mark: r.time ? `— ${r.time}` : "",
+        image: i === 0 ? userOneImg : i === 1 ? userTwoImg : userThreeImg,
+        name: r.author || `Reviewer ${i + 1}`,
+        title: r.rating ? `${r.rating}★` : "",
+      }))
+    : localeItems;
+
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              {items[0].text} <Mark>{items[0].mark}</Mark>
             </p>
 
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
+            <Avatar image={items[0].image} name={items[0].name} title={items[0].title} />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              {items[1].text} <Mark>{items[1].mark}</Mark>
             </p>
 
-            <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
-            />
+            <Avatar image={items[1].image} name={items[1].name} title={items[1].title} />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+              {items[2].text} <Mark>{items[2].mark}</Mark>
             </p>
 
-            <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
-            />
+            <Avatar image={items[2].image} name={items[2].name} title={items[2].title} />
           </div>
         </div>
       </div>
@@ -58,7 +83,7 @@ export const Testimonials = () => {
 };
 
 interface AvatarProps {
-  image: any;
+  image: string;
   name: string;
   title: string;
 }
@@ -69,10 +94,9 @@ function Avatar(props: Readonly<AvatarProps>) {
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
         <Image
           src={props.image}
-          width="40"
-          height="40"
+          width={40}
+          height={40}
           alt="Avatar"
-          placeholder="blur"
         />
       </div>
       <div>

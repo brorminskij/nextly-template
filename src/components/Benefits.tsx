@@ -1,23 +1,26 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Container }  from "@/components/Container";
+import { useTranslation } from "@/i18n/TranslationProvider";
 
 interface BenefitsProps {
   imgPos?: "left" | "right";
   data: {
     imgPos?: "left" | "right";
-    title: string;
-    desc: string;
+    titleKey: string;
+    descKey: string;
     image: any;
     bullets: {
-      title: string;
-      desc: string;
+      titleKey: string;
+      descKey: string;
       icon: React.ReactNode;
     }[];
   };
 }
 export const Benefits = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
+  const { t } = useTranslation();
   return (
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
@@ -25,16 +28,26 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Image
-              src={data.image}
-              width={521}
-              height={521}
-              alt="Benefits"
-              className={"object-cover"}
-              placeholder="blur"
-              blurDataURL={data.image.src}
-            />
-          </div>
+            {typeof data.image === "string" ? (
+              <Image
+                src={data.image}
+                width={521}
+                height={521}
+                alt={t(data.titleKey)}
+                className={"object-cover"}
+              />
+            ) : (
+              <Image
+                src={data.image}
+                width={521}
+                height={521}
+                alt={t(data.titleKey)}
+                className={"object-cover"}
+                placeholder="blur"
+                blurDataURL={data.image.src}
+              />
+            )}
+            </div>
         </div>
 
         <div
@@ -44,18 +57,18 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
           <div>
             <div className="flex flex-col w-full mt-4">
               <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-                {data.title}
+                {t(data.titleKey)}
               </h3>
 
               <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-                {data.desc}
+                {t(data.descKey)}
               </p>
             </div>
 
             <div className="w-full mt-5">
               {data.bullets.map((item, index) => (
-                <Benefit key={index} title={item.title} icon={item.icon}>
-                  {item.desc}
+                <Benefit key={index} title={t(item.titleKey)} icon={item.icon}>
+                  {t(item.descKey)}
                 </Benefit>
               ))}
             </div>

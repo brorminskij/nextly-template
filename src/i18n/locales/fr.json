@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "about": "À propos",
+    "membership": "Adhésion",
+    "rules": "Règles",
+    "contact": "Contact",
+    "brand": "Tranquility",
+    "brandSub": "CLUB SOCIAL"
+  },
+  "home": {
+    "preBenefits": "Avantages Tranquility",
+    "benefitsTitle": "Pourquoi rejoindre Tranquility",
+    "benefitsIntro": "Tranquility est un club privé réservé aux membres axé sur le bien-être, le calme et une communauté responsable. Voici quelques raisons pour lesquelles les membres choisissent de nous rejoindre.",
+    "watchPre": "Regarder une vidéo",
+    "watchTitle": "Voir l'espace",
+    "watchIntro": "Une courte visite de notre salon, des événements et de notre approche centrée sur les membres.",
+    "testimonialsPre": "Témoignages",
+    "testimonialsTitle": "Ce que disent les membres",
+    "testimonialsIntro": "Écoutez nos membres parler du calme, du respect et de la communauté qu'ils vivent à Tranquility.",
+    "faqPre": "FAQ",
+    "faqTitle": "Questions fréquentes",
+    "faqIntro": "Réponses aux questions courantes sur l'adhésion et les visites. Si vous avez besoin de plus de détails, visitez la page Contact ou demandez une adhésion."
+  },
+  "hero": {
+    "title": "Un espace privé pour le calme et la communauté",
+    "subtitle": "Un club social réservé aux membres en Espagne axé sur le bien-être, l'éducation et le plaisir responsable.",
+    "cta": "Demander l'adhésion",
+    "imageAlt": "Salon Tranquility",
+    "trustedPrefix": "Fiable par",
+    "trustedCount": "2000+ membres adultes",
+    "trustedSuffix": "dans notre communauté privée.",
+    "feature1": "Utilisation Responsable",
+    "feature2": "Communauté d'abord",
+    "feature3": "Privé et Sûr"
+  },
+  "benefits": {
+    "one": {
+      "title": "Un espace calme et privé",
+      "desc": "Notre salon et nos événements sont conçus pour favoriser la détente, l'apprentissage et la socialisation respectueuse dans un environnement privé réservé aux membres.",
+      "bullets": [
+        { "title": "Rassemblements attentifs", "desc": "Événements et sessions sélectionnés axés sur le bien-être et l'éducation." },
+        { "title": "Programmation soignée", "desc": "Ateliers, conférences et expériences en petits groupes pour les membres." },
+        { "title": "Adhésion privée", "desc": "Une communauté réservée aux adultes, examinée et qui privilégie la confidentialité et le respect." }
+      ]
+    },
+    "two": {
+      "title": "Adhésion et sécurité",
+      "desc": "L'adhésion garantit un environnement privé et sûr soutenu par des règles claires et la supervision du personnel.",
+      "bullets": [
+        { "title": "Accès privé", "desc": "L'accès est limité aux membres approuvés pour assurer la discrétion et la sécurité." },
+        { "title": "Opérations centrées sur le membre", "desc": "Des événements encadrés et des politiques claires maintiennent l'espace accueillant pour tous." },
+        { "title": "Bien-être d'abord", "desc": "Pratiques et espaces qui privilégient la détente et le plaisir responsable." }
+      ]
+    }
+  },
+  "cta": {
+    "title": "Prêt à rejoindre Tranquility?",
+    "subtitle": "Faites partie d'une communauté privée et calme axée sur le bien-être.",
+    "button": "Demander l'adhésion"
+  },
+  "faq": {
+    "items": [
+      { "question": "Qui peut rejoindre Tranquility?", "answer": "Tranquility est un club privé réservé aux membres adultes. L'adhésion est soumise à une demande et à une approbation pour garantir une communauté respectueuse." },
+      { "question": "Comment postuler?", "answer": "Commencez en cliquant sur 'Demander l'adhésion' sur le site ou contactez-nous via la page Contact. Notre équipe examinera les demandes et répondra avec les prochaines étapes." },
+      { "question": "Que dois-je apporter lors de la visite?", "answer": "Veuillez apporter une pièce d'identité valide pour la vérification de l'âge. Suivez les indications spécifiques à l'événement fournies lors de la réservation." },
+      { "question": "Les événements sont-ils privés?", "answer": "Oui — les événements et rassemblements sont réservés aux membres sauf indication explicite de public. Les photos ou le partage sans consentement ne sont pas autorisés." }
+    ]
+  },
+  "testimonials": {
+    "items": [
+      { "text": "\"Un environnement calme et respectueux — parfait pour des conversations significatives et l'apprentissage.\"", "mark": "— Membre depuis 2022", "name": "Ana M.", "title": "Membre" },
+      { "text": "\"Des événements réfléchis et une communauté accueillante — j'y reviens toujours.\"", "mark": "— Membre local", "name": "Carlos R.", "title": "Membre" },
+      { "text": "\"La confidentialité et le respect sont essentiels ici — une trouvaille rare.\"", "mark": "— Nouveau membre", "name": "Lucia S.", "title": "Membre" }
+    ]
+  },
+  "legal": {
+    "termsTitle": "Conditions d'Utilisation",
+    "termsIntro": "Bienvenue chez Tranquility. En accédant ou en utilisant notre site web et nos services, vous acceptez ces Conditions d'Utilisation.",
+    "privacyTitle": "Politique de Confidentialité",
+    "privacyIntro": "Tranquility s'engage à protéger votre vie privée. Cette politique explique quelles informations nous collectons, comment nous les utilisons et quels sont vos droits.",
+    "using": { "title": "Utilisation de notre service", "text": "Tranquility offre une expérience de club privé aux membres avec des informations sur les événements, l'adhésion et les options de contact. Vous acceptez d'utiliser le site légalement et de ne pas tenter d'interrompre les services ou d'accéder à des zones restreintes." },
+    "noSale": { "title": "Pas de Vente de Biens", "text": "Nous ne vendons pas de produits physiques ou numériques via ce site." },
+    "liability": { "title": "Responsabilité", "text": "Les informations de ce site sont fournies \"telles quelles\" et à titre informatif uniquement. Tranquility n'offre aucune garantie sur l'exhaustivité ou l'exactitude de ces informations et décline toute responsabilité pour les dommages découlant de l'utilisation du site, dans la mesure permise par la loi." },
+    "contactTitle": "Contact",
+    "legalTitle": "Mentions Légales",
+    "contact": "Pour toute question, contactez-nous à {email}."
+  },
+  "privacy": {
+    "collectTitle": "Informations que nous collectons",
+    "collectText": "Nous pouvons collecter des coordonnées que vous fournissez (nom, e-mail, téléphone), les communications que vous nous envoyez et des données techniques telles que les informations du navigateur et de l'appareil lorsque vous visitez notre site. Nous collectons uniquement ce qui est nécessaire pour fournir nos services.",
+    "useTitle": "Comment nous utilisons les informations",
+    "useText": "Nous utilisons les données personnelles pour répondre aux demandes, gérer les demandes d'adhésion, envoyer des notifications importantes et améliorer nos services. Nous n'utilisons pas les données personnelles pour des profils automatisés et nous ne vendons pas les informations personnelles.",
+    "noSale": "Nous ne vendons pas vos informations personnelles.",
+    "cookiesTitle": "Cookies et suivi",
+    "cookiesText": "Nous pouvons utiliser des cookies et des technologies similaires pour faire fonctionner le site et comprendre son utilisation. Vous pouvez contrôler les cookies via les paramètres de votre navigateur.",
+    "rightsTitle": "Vos droits",
+    "rightsText": "Selon votre juridiction, vous pouvez avoir des droits d'accès, de rectification, d'exportation ou de suppression de vos données personnelles. Pour exercer ces droits, contactez-nous à {email}.",
+    "securityTitle": "Rétention et sécurité des données",
+    "securityText": "Nous conservons les données personnelles uniquement le temps nécessaire et utilisons des mesures administratives et techniques raisonnables pour les protéger. Aucun mode de transmission sur Internet n'est totalement sûr ; nous ne pouvons garantir une sécurité absolue.",
+    "contactTitle": "Contact"
+  },
+  "widget": {
+    "openAria": "Ouvrir le chat WhatsApp",
+    "header": { "title": "Comment pouvons-nous aider?", "subtitle": "Nous répondons généralement en quelques heures" },
+    "form": {
+      "fullName": { "label": "Nom complet", "placeholder": "Jean Dupont", "errors": { "required": "Le nom complet est requis" } },
+      "email": { "label": "Adresse e-mail", "placeholder": "vous@entreprise.com", "errors": { "required": "Entrez votre e-mail", "pattern": "Veuillez entrer un e-mail valide" } },
+      "message": { "label": "Votre message", "placeholder": "Votre message", "errors": { "required": "Entrez votre message" } },
+      "submit": "Envoyer le message",
+      "clientError": "Erreur client. Veuillez vérifier la console pour plus d'informations"
+    },
+    "hidden": { "subject": "{name} a envoyé un message depuis Tranquility", "fromName": "Site Tranquility" },
+    "poweredBy": { "prefix": "Propulsé par" },
+    "success": { "title": "Message envoyé avec succès", "back": "Retour" },
+    "error": { "title": "Oups, quelque chose s'est mal passé!", "back": "Retour" }
+  },
+  "footer": {
+    "description": "Tranquility est un club privé réservé aux membres axé sur le bien-être, des événements sélectionnés et une communauté respectueuse. Situé en Espagne, nous privilégions la confidentialité et le plaisir responsable.",
+    "copyright": "Droits d'auteur © {year}. Tranquility."
+  },
+  "legal": {
+    "termsTitle": "Conditions d'utilisation",
+    "termsIntro": "Bienvenue sur Tranquility. En accédant à notre site et à nos services, vous acceptez ces conditions d'utilisation.",
+    "privacyTitle": "Politique de confidentialité",
+    "privacyIntro": "Tranquility s'engage à protéger votre vie privée. Cette politique explique quelles informations nous collectons, comment nous les utilisons et vos droits.",
+    "legalTitle": "Mentions légales",
+    "contact": "Pour toute question, contactez-nous à {email}."
+  },
+  "lang": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français"
+  }
+}

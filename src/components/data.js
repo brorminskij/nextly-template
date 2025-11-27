@@ -7,50 +7,51 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.png";
-import benefitTwoImg from "../../public/img/benefit-two.png";
+// Use public/static paths instead of imported image modules
+// This allows swapping images without static imports.
+
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: benefitOneImg,
+  titleKey: "benefits.one.title",
+  descKey: "benefits.one.desc",
+  image: "/img/hero.png",
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      titleKey: "benefits.one.bullets.0.title",
+      descKey: "benefits.one.bullets.0.desc",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      titleKey: "benefits.one.bullets.1.title",
+      descKey: "benefits.one.bullets.1.desc",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      titleKey: "benefits.one.bullets.2.title",
+      descKey: "benefits.one.bullets.2.desc",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
+  titleKey: "benefits.two.title",
+  descKey: "benefits.two.desc",
+  image: "/img/logo.jpg",
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      titleKey: "benefits.two.bullets.0.title",
+      descKey: "benefits.two.bullets.0.desc",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      titleKey: "benefits.two.bullets.1.title",
+      descKey: "benefits.two.bullets.1.desc",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      titleKey: "benefits.two.bullets.2.title",
+      descKey: "benefits.two.bullets.2.desc",
       icon: <SunIcon />,
     },
   ],
