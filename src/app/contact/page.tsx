@@ -2,17 +2,16 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/Container";
-import Image from "next/image";
-import heroImg from "../../../public/img/logo.jpg";
+// image removed per request
 import { useTranslation } from "@/i18n/TranslationProvider";
 
 export default function Contact() {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen">
-      <Container className="flex flex-wrap">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
+      <Container className="flex flex-col items-center">
+        <div className="w-full">
+          <div className="max-w-2xl mb-8 text-center mx-auto">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -32,21 +31,9 @@ export default function Contact() {
             </motion.p>
           </div>
         </div>
-
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div>
-            <Image
-              src={heroImg}
-              width={380}
-              height={380}
-              className="object-cover rounded-lg"
-              alt={t("contact.imageAlt")}
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
-        </div>
+        
       </Container>
+
 
       <Container>
         <div className="max-w-3xl mx-auto pb-28">
@@ -79,6 +66,28 @@ export default function Contact() {
               </button>
             </div>
           </motion.form>
+      <Container>
+          <div className="w-full bg-white rounded-lg shadow-sm overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps?q=Tranquility+Social+Weed+Club&output=embed"
+              className="w-full h-64 border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Tranquility Social Weed Club - Map"
+            />
+
+            <div className="p-4 flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-emerald-600 flex-shrink-0">
+                <path fillRule="evenodd" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" clipRule="evenodd" />
+              </svg>
+
+              <div>
+                <p className="font-semibold text-gray-800">Tranquility Social Weed Club</p>
+                <p className="text-sm text-gray-600">C. Río Subordán, 1, local 311-312, 29620 Torremolinos, Málaga, Spanien</p>
+              </div>
+            </div>
+        </div>
+      </Container>
         </div>
       </Container>
     </div>

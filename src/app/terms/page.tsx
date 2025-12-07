@@ -28,7 +28,7 @@ export default function TermsPage() {
 
         <section className="mt-8">
           <h2 className="text-xl font-medium">{t("legal.contactTitle")}</h2>
-          <p className="mt-2 text-gray-600">{t("legal.contact", { email: "info@tranquility.example" })}</p>
+          <p className="mt-2 text-gray-600">{t("legal.contact", { email: "asociacion.tq@gmail.com" })}</p>
         </section>
       </div>
     </Container>

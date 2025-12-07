@@ -1,10 +1,10 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
   SunIcon,
+  LockClosedIcon,
+  UserGroupIcon,
+  SparklesIcon,
+  CalendarDaysIcon,
+  ShieldCheckIcon
 } from "@heroicons/react/24/solid";
 
 // Use public/static paths instead of imported image modules
@@ -14,22 +14,22 @@ import {
 const benefitOne = {
   titleKey: "benefits.one.title",
   descKey: "benefits.one.desc",
-  image: "/img/hero.png",
+  image: "/img/waterfall.jpg",
   bullets: [
     {
       titleKey: "benefits.one.bullets.0.title",
       descKey: "benefits.one.bullets.0.desc",
-      icon: <FaceSmileIcon />,
+      icon: <SparklesIcon />,
     },
     {
       titleKey: "benefits.one.bullets.1.title",
       descKey: "benefits.one.bullets.1.desc",
-      icon: <ChartBarSquareIcon />,
+      icon: <CalendarDaysIcon />,
     },
     {
       titleKey: "benefits.one.bullets.2.title",
       descKey: "benefits.one.bullets.2.desc",
-      icon: <CursorArrowRaysIcon />,
+      icon: <UserGroupIcon />,
     },
   ],
 };
@@ -37,17 +37,17 @@ const benefitOne = {
 const benefitTwo = {
   titleKey: "benefits.two.title",
   descKey: "benefits.two.desc",
-  image: "/img/logo.jpg",
+  image: "/img/sloths.jpeg",
   bullets: [
     {
       titleKey: "benefits.two.bullets.0.title",
       descKey: "benefits.two.bullets.0.desc",
-      icon: <DevicePhoneMobileIcon />,
+      icon: <LockClosedIcon />,
     },
     {
       titleKey: "benefits.two.bullets.1.title",
       descKey: "benefits.two.bullets.1.desc",
-      icon: <AdjustmentsHorizontalIcon />,
+      icon: <ShieldCheckIcon />,
     },
     {
       titleKey: "benefits.two.bullets.2.title",

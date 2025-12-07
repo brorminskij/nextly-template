@@ -4,8 +4,10 @@ import React, { useEffect, useState } from "react";
 import { Container } from "@/components/Container";
 import { useTranslation } from "@/i18n/TranslationProvider";
 
+import { UserIcon } from "@heroicons/react/24/solid";
+
 // Use public image paths instead of static imports (avoids blurDataURL issues)
-const userOneImg = "/img/user1.jpg";
+const userOneImg = "/img/sofiam.jpg";
 const userTwoImg = "/img/user2.jpg";
 const userThreeImg = "/img/user3.jpg";
 
@@ -91,14 +93,10 @@ interface AvatarProps {
 function Avatar(props: Readonly<AvatarProps>) {
   return (
     <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
-          src={props.image}
-          width={40}
-          height={40}
-          alt="Avatar"
-        />
+      <div className="flex-shrink-0 w-14 h-14 rounded-full bg-gray-300 flex items-center justify-center dark:bg-gray-700">
+        <UserIcon className="w-10 h-10 text-gray-600 dark:text-gray-300" />
       </div>
+
       <div>
         <div className="text-lg font-medium">{props.name}</div>
         <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
@@ -111,7 +109,7 @@ function Mark(props: { readonly children: React.ReactNode }) {
   return (
     <>
       {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
+      <mark className="text-emerald-800 bg-emerald-100 rounded-md ring-emerald-100 ring-4 dark:ring-emerald-900 dark:bg-emerald-900 dark:text-emerald-200">
         {props.children}
       </mark>{" "}
     </>

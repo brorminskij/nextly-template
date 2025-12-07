@@ -37,7 +37,7 @@ export function Footer() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-emerald-600 focus:text-emerald-600 focus:bg-emerald-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item.name}
                 </Link>
@@ -48,19 +48,19 @@ export function Footer() {
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               <Link
                 href="/terms"
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-emerald-600 focus:text-emerald-600 focus:bg-emerald-100 focus:outline-none dark:focus:bg-trueGray-700"
               >
                 Terms
               </Link>
               <Link
                 href="/privacy"
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-emerald-600 focus:text-emerald-600 focus:bg-emerald-100 focus:outline-none dark:focus:bg-trueGray-700"
               >
                 Privacy
               </Link>
               <Link
                 href="/legal"
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-emerald-600 focus:text-emerald-600 focus:bg-emerald-100 focus:outline-none dark:focus:bg-trueGray-700"
               >
                 Legal
               </Link>
@@ -69,7 +69,7 @@ export function Footer() {
           <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a href="https://instagram.com/tranquilitycsc" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">
+              <a href="https://instagram.com/tranquilitycsc" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>

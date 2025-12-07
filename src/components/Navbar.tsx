@@ -39,11 +39,11 @@ export const Navbar = () => {
         </Link>
 
         {/* Right side: language dropdown with flags */}
-        <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
+        {/* <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
           <div className="hidden mr-3 lg:flex nav__item items-center">
             <LanguageDropdown lang={lang} setLang={setLang} t={t} />
           </div>
-        </div>
+        </div> */}
 
         <Disclosure>
           {({ open }) => (
@@ -51,7 +51,7 @@ export const Navbar = () => {
               {/* Mobile Menu Button */}
               <Disclosure.Button
                 aria-label="Toggle Menu"
-                className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 dark:text-gray-300 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-trueGray-700 focus:outline-none"
+                className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-emerald-600 dark:text-gray-300 focus:text-emerald-600 focus:bg-emerald-100 dark:focus:bg-trueGray-700 focus:outline-none"
               >
                 <svg
                   className="w-6 h-6 fill-current"
@@ -79,20 +79,20 @@ export const Navbar = () => {
                   <Link
                     key={index}
                     href={item.href}
-                    className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                    className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-emerald-600 focus:text-emerald-600 focus:bg-emerald-100 dark:focus:bg-gray-800 focus:outline-none"
                   >
                     {item.name}
                   </Link>
                 ))}
 
                 {/* mobile: language dropdown (simple list) */}
-                <div className="w-full px-4 py-2 mt-3">
+                {/* <div className="w-full px-4 py-2 mt-3">
                     <div className="flex flex-col">
                       <button aria-label={t("lang.en")} onClick={() => setLang("en")} className="text-left px-2 py-2 text-xl">🇬🇧</button>
                       <button aria-label={t("lang.es")} onClick={() => setLang("es")} className="text-left px-2 py-2 text-xl">🇪🇸</button>
                       <button aria-label={t("lang.fr")} onClick={() => setLang("fr")} className="text-left px-2 py-2 text-xl">🇫🇷</button>
                     </div>
-                </div>
+                </div> */}
               </Disclosure.Panel>
             </>
           )}
@@ -105,7 +105,7 @@ export const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={menu.href}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 rounded-md"
+                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 dark:text-gray-200 hover:text-emerald-600 focus:text-emerald-600 focus:bg-emerald-100 dark:focus:bg-gray-800 rounded-md"
                 >
                   {menu.name}
                 </Link>
