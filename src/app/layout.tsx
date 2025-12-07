@@ -6,6 +6,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PopupWidget } from "@/components/PopupWidget";
 import { TranslationProvider } from "@/i18n/TranslationProvider";
+import AgeGate from "@/components/AgeGate";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -66,8 +67,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+          <AgeGate />
         <TranslationProvider>
           <Navbar />
           <div>{children}</div>

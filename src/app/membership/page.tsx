@@ -118,22 +118,22 @@ export default function Membership() {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-center pt-8"
-          >
-            <a
-              href="http://wa.me/34670682126"
-              target="_blank"
-              rel="noopener"
-              className="inline-block mt-6 px-8 py-3 bg-emerald-500 hover:bg-emerald-600 text-neutral-900 font-semibold rounded-xl transition"
-            >
-              {t("membership.requestWhatsapp")}
-            </a>
-          </motion.div>
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.3, duration: 0.6 }}
+  className="text-center pt-8"
+>
+  <a
+    href="http://wa.me/34670682126"
+    target="_blank"
+    rel="noopener"
+    className="px-8 py-4 text-lg font-medium text-center text-white bg-green-600 rounded-md"
+  >
+    {t("membership.requestWhatsapp")}
+  </a>
+</motion.div>
         </div>
       </Container>
     </div>

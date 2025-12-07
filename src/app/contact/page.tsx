@@ -34,7 +34,11 @@ export default function Contact() {
         
       </Container>
 
+<Container>
+        <p className="text-center text-gray-600 mb-10">Phone: +34</p>
+        <p className="text-center text-gray-600 mb-10">Email: +34</p>
 
+</Container>
       <Container>
         <div className="max-w-3xl mx-auto pb-28">
           <motion.form
