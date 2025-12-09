@@ -79,10 +79,10 @@ export function Footer() {
 
         <div className="my-10 text-sm text-center text-gray-600">
              {/* Disclaimer */}
-    <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+          {t("footer.copyright", { year: new Date().getFullYear() })}
+    <p>
       Nothing for sale. Private, non-profit members association. Access restricted to adults 18+ with approved membership.
     </p>
-          {t("footer.copyright", { year: new Date().getFullYear() })}
         </div>
       </Container>
       {/* Backlink removed for Tranquility branding */}

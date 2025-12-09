@@ -6,7 +6,7 @@ import { useTranslation } from "@/i18n/TranslationProvider";
 
 import { UserIcon } from "@heroicons/react/24/solid";
 
-// Use public image paths instead of static imports (avoids blurDataURL issues)
+// Use public image paths instead of static imports
 const userOneImg = "/img/sofiam.jpg";
 const userTwoImg = "/img/user2.jpg";
 const userThreeImg = "/img/user3.jpg";
@@ -25,18 +25,34 @@ export const Testimonials = () => {
           setRemoteItems(j.reviews);
         }
       })
-      .catch(() => {
-        // ignore and fallback to local strings
-      });
+      .catch(() => {});
     return () => {
       mounted = false;
     };
   }, []);
 
   const localeItems = [
-    { text: t("testimonials.items.0.text"), mark: t("testimonials.items.0.mark"), image: userOneImg, name: t("testimonials.items.0.name"), title: t("testimonials.items.0.title") },
-    { text: t("testimonials.items.1.text"), mark: t("testimonials.items.1.mark"), image: userTwoImg, name: t("testimonials.items.1.name"), title: t("testimonials.items.1.title") },
-    { text: t("testimonials.items.2.text"), mark: t("testimonials.items.2.mark"), image: userThreeImg, name: t("testimonials.items.2.name"), title: t("testimonials.items.2.title") },
+    {
+      text: t("testimonials.items.0.text"),
+      mark: t("testimonials.items.0.mark"),
+      image: userOneImg,
+      name: t("testimonials.items.0.name"),
+      title: t("testimonials.items.0.title"),
+    },
+    {
+      text: t("testimonials.items.1.text"),
+      mark: t("testimonials.items.1.mark"),
+      image: userTwoImg,
+      name: t("testimonials.items.1.name"),
+      title: t("testimonials.items.1.title"),
+    },
+    {
+      text: t("testimonials.items.2.text"),
+      mark: t("testimonials.items.2.mark"),
+      image: userThreeImg,
+      name: t("testimonials.items.2.name"),
+      title: t("testimonials.items.2.title"),
+    },
   ];
 
   const items = remoteItems
@@ -52,33 +68,32 @@ export const Testimonials = () => {
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              {items[0].text} <Mark>{items[0].mark}</Mark>
-            </p>
+        {items.map((item, i) => (
+          <div
+            key={i}
+            className={
+              i === 0
+                ? "lg:col-span-2 xl:col-auto"
+                : ""
+            }
+          >
+            <div
+              className="
+                flex flex-col justify-between w-full h-full 
+                bg-gray-100 rounded-2xl py-14 px-8 
+                text-center items-center
+                lg:text-left lg:items-start
+                dark:bg-trueGray-800
+              "
+            >
+              <p className="text-2xl leading-normal">
+                {item.text} <Mark>{item.mark}</Mark>
+              </p>
 
-            <Avatar image={items[0].image} name={items[0].name} title={items[0].title} />
+              <Avatar image={item.image} name={item.name} title={item.title} />
+            </div>
           </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              {items[1].text} <Mark>{items[1].mark}</Mark>
-            </p>
-
-            <Avatar image={items[1].image} name={items[1].name} title={items[1].title} />
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              {items[2].text} <Mark>{items[2].mark}</Mark>
-            </p>
-
-            <Avatar image={items[2].image} name={items[2].name} title={items[2].title} />
-          </div>
-        </div>
+        ))}
       </div>
     </Container>
   );
@@ -92,7 +107,13 @@ interface AvatarProps {
 
 function Avatar(props: Readonly<AvatarProps>) {
   return (
-    <div className="flex items-center mt-8 space-x-3">
+    <div
+      className="
+        flex items-center space-x-3 mt-8 
+        justify-center 
+        lg:justify-start
+      "
+    >
       <div className="flex-shrink-0 w-14 h-14 rounded-full bg-gray-300 flex items-center justify-center dark:bg-gray-700">
         <UserIcon className="w-10 h-10 text-gray-600 dark:text-gray-300" />
       </div>
