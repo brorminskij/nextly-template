@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Tranquility Cannabis Social Club | Torremolinos, Málaga",
     description:
       "A private, members-only cannabis social club in Torremolinos dedicated to wellbeing, education and responsible cannabis culture.",
-    url: "https://tranquilitysocialclyb.com/",
+    url: "https://tranquilitysocialclub.com/",
     siteName: "Tranquility Cannabis Social Club",
     locale: "en_US",
     type: "website",
