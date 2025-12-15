@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-   alternates: {
+  alternates: {
     canonical: "https://tranquilitysocialclub.com/",
   },
   openGraph: {
@@ -67,10 +68,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-          <AgeGate />
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="8052640f-e031-4c38-a0f0-7bb7601c1a9d"
+          strategy="afterInteractive"
+        />
+        <AgeGate />
         <TranslationProvider>
           <Navbar />
           <div>{children}</div>
