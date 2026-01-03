@@ -1,10 +1,13 @@
 "use client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Container } from "@/components/Container";
 import { useTranslation } from "@/i18n/TranslationProvider";
+import { ReactGoogleReviews } from "react-google-reviews";
+import "react-google-reviews/dist/index.css";
 
 import { UserIcon } from "@heroicons/react/24/solid";
+
+const featurableWidgetId = "9db39393-addf-4e2a-b47b-3a78fd72c91b";
 
 // Use public image paths instead of static imports
 const userOneImg = "/img/sofiam.jpg";
@@ -66,36 +69,11 @@ export const Testimonials = () => {
     : localeItems;
 
   return (
-    <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        {items.map((item, i) => (
-          <div
-            key={i}
-            className={
-              i === 0
-                ? "lg:col-span-2 xl:col-auto"
-                : ""
-            }
-          >
-            <div
-              className="
-                flex flex-col justify-between w-full h-full 
-                bg-gray-100 rounded-2xl py-14 px-8 
-                text-center items-center
-                lg:text-left lg:items-start
-                dark:bg-trueGray-800
-              "
-            >
-              <p className="text-2xl leading-normal">
-                {item.text} <Mark>{item.mark}</Mark>
-              </p>
-
-              <Avatar image={item.image} name={item.name} title={item.title} />
-            </div>
-          </div>
-        ))}
-      </div>
-    </Container>
+      <ReactGoogleReviews reviewCardStyle={{
+        //               height: 280,
+        // display: "flex",
+        // flexDirection: "column"
+      }} carouselStyle={{padding: 0}} carouselBtnStyle={{display: "none"}} showDots={false} layout="carousel" featurableId={featurableWidgetId} />
   );
 };
 
