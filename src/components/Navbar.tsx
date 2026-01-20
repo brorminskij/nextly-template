@@ -14,6 +14,7 @@ export const Navbar = () => {
     { name: t("nav.about"), href: "/about" },
     { name: t("nav.membership"), href: "/membership" },
     { name: t("nav.rules"), href: "/rules" },
+    { name: t("nav.blog"), href: "/blog" },
     { name: t("nav.contact"), href: "/contact" },
   ];
 

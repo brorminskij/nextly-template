@@ -4,6 +4,7 @@
     "membership": "Membership",
     "rules": "Rules",
     "contact": "Contact",
+    "blog": "Blog",
     "brand": "Tranquility",
     "brandSub": "SOCIAL CLUB"
   },
@@ -121,7 +122,7 @@
     "rulesButton": "Club Rules",
     "howToApplyTitle": "How to Apply",
     "howToApplyText": "Start by requesting membership using the button above. Our team reviews applications to ensure alignment with our community values and eligibility criteria.",
-    "howToApply": { "list": ["Complete the application form and provide valid ID.", "Share a short statement about why you want to join.", "Wait for review — response times typically range from 2–7 days."] },
+    "howToApply": { "list": ["Complete the application form and provide valid ID.", "Share a short statement about why you want to join.", "Wait for review — response times typically vary"] },
     "benefitsTitle": "Membership Benefits",
     "benefitsText": "Members gain access to private events, a calm lounge space, curated learning sessions and a respectful community of peers.",
     "feesTitle": "Fees & Policies",
@@ -149,7 +150,6 @@
   },
   "contact": {
     "title": "Contact Tranquility",
-    "subtitle": "",
     "imageAlt": "Contact",
     "subtitle": "Have questions or want to apply? Send us a message and we'll get back to you as soon as possible.",
     "form": {
