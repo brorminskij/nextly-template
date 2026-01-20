@@ -74,6 +74,76 @@
       { "text": "\"La confidentialité et le respect sont essentiels ici — une trouvaille rare.\"", "mark": "— Nouveau membre", "name": "Lucia S.", "title": "Membre" }
     ]
   },
+  "about": {
+    "title": "À propos de Tranquility",
+    "subtitle": "Une communauté paisible et privée créée pour les adultes en quête de calme, de connexion et d'un environnement social sûr.",
+    "cta": "Demander l'adhésion",
+    "imageAlt": "Logo Tranquility",
+    "missionTitle": "Notre Mission",
+    "missionText": "Chez Tranquility, notre mission est d'offrir un environnement calme, accueillant et responsable pour les adultes. Nous nous concentrons sur la pleine conscience, la communauté et le bien-être — créant une échappatoire paisible au bruit de la vie quotidienne.",
+    "privateTitle": "Une Communauté Privée d'Adhésion",
+    "privateText": "Tranquility fonctionne strictement comme une association sociale privée réservée aux membres conformément aux réglementations locales. L'accès est réservé aux adultes approuvés, garantissant la confidentialité, la sécurité et la participation responsable à tout moment.",
+    "noteLabel": "Remarque:",
+    "noteText": "Nous ne sommes pas ouverts au grand public — l'adhésion est requise pour accéder au club.",
+    "experienceTitle": "L'Expérience Tranquility",
+    "experienceText": "Dans notre espace, les membres peuvent profiter d'une atmosphère de salon paisible, une communauté respectueuse et un environnement magnifiquement conçu pour favoriser la détente et la pleine conscience.",
+    "valuesTitle": "Nos Valeurs",
+    "values": {
+      "respect": { "title": "Respect", "desc": "pour les personnes, le temps, l'espace et le bien-être." },
+      "community": { "title": "Communauté", "desc": "nous grandissons ensemble." },
+      "wellbeing": { "title": "Bien-être", "desc": "nous promouvons la pleine conscience et l'équilibre." },
+      "privacy": { "title": "Confidentialité", "desc": "la discrétion est une partie centrale de notre culture." }
+    },
+    "joinTitle": "Prêt à nous rejoindre?",
+    "joinText": "Nous accueillons les adultes responsables qui valorisent le calme, la confidentialité et la connexion.",
+    "joinButton": "En savoir plus sur l'adhésion"
+  },
+  "membership": {
+    "title": "Adhésion",
+    "subtitle": "& Accès",
+    "imageAlt": "Adhésion",
+    "lead": "Découvrez comment postuler, ce que l'adhésion comprend et comment nous gardons notre communauté sûre et privée.",
+    "requestButton": "Demander l'adhésion",
+    "rulesButton": "Règles du Club",
+    "howToApplyTitle": "Comment Postuler",
+    "howToApplyText": "Commencez par demander une adhésion en utilisant le bouton ci-dessus. Notre équipe examinera les demandes pour assurer l'alignement avec nos valeurs communautaires et nos critères d'admissibilité.",
+    "howToApply": { "list": ["Remplissez le formulaire de demande et fournissez une pièce d'identité valide.", "Partagez une brève déclaration sur les raisons de votre envie de nous rejoindre.", "Attendez l'examen — les délais de réponse varient généralement de 2 à 7 jours"] },
+    "benefitsTitle": "Avantages de l'Adhésion",
+    "benefitsText": "Les membres ont accès à des événements privés, un espace de salon calme, des sessions d'apprentissage sélectionnées et une communauté respectueuse de pairs.",
+    "feesTitle": "Frais et Politiques",
+    "feesText": "L'adhésion implique des frais qui aident à soutenir l'espace et la programmation. Les frais et les politiques de remboursement sont fournis lors du processus de demande.",
+    "requestWhatsapp": "Demander l'adhésion via WhatsApp"
+  },
+  "rules": {
+    "title": "Règles du Club",
+    "subtitle": "Directives pour une communauté sûre, respectueuse et accueillante.",
+    "imageAlt": "Règles du club",
+    "applyButton": "Demander une Adhésion",
+    "coreGuidelinesTitle": "Directives Principales",
+    "guidelines": [
+      "Respectez les autres: traitez les membres et le personnel avec courtoisie et considération à tout moment.",
+      "Confidentialité d'abord: ne partagez pas les informations personnelles ou les photos d'autres membres sans consentement.",
+      "Conduite responsable: les activités illégales et les comportements perturbateurs sont strictement interdits.",
+      "Restriction d'âge: le club est réservé aux adultes approuvés. Apportez toujours une preuve d'âge lorsqu'elle est demandée.",
+      "Sécurité: suivez les instructions du personnel et les directives de sécurité de la salle."
+    ],
+    "admissionTitle": "Admission et Adhésion",
+    "admissionText": "Les demandes d'adhésion sont examinées pour garantir une communauté sûre et respectueuse. L'admission peut être refusée ou l'adhésion révoquée à la discrétion du club en cas de violations.",
+    "enforcementTitle": "Application",
+    "enforcementText": "Le personnel est habilité à faire respecter les règles et peut demander aux membres de partir si nécessaire. Les violations graves peuvent entraîner des interdictions permanentes et des actions légales.",
+    "contactButton": "Questions ou Préoccupations"
+  },
+  "contact": {
+    "title": "Contacter Tranquility",
+    "imageAlt": "Contact",
+    "subtitle": "Vous avez des questions ou vous souhaitez postuler? Envoyez-nous un message et nous vous répondrons dès que possible.",
+    "form": {
+      "name": { "label": "Nom", "placeholder": "Votre nom" },
+      "email": { "label": "Adresse e-mail", "placeholder": "vous@exemple.com" },
+      "message": { "label": "Message", "placeholder": "Comment pouvons-nous aider?" },
+      "submit": "Envoyer le message"
+    }
+  },
   "legal": {
     "termsTitle": "Conditions d'Utilisation",
     "termsIntro": "Bienvenue chez Tranquility. En accédant ou en utilisant notre site web et nos services, vous acceptez ces Conditions d'Utilisation.",
