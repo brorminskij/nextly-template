@@ -1,5 +1,35 @@
 export const posts = [
   {
+   slug: "tranquility-social-club-events",
+   title: "Events at Tranquility Social Club: Music, Art, Games & More",
+   date: "2026-01-22",
+   excerpt: "Discover the engaging events at Tranquility Social Club, including music nights, art sessions, board games, playstation and other community activities for members.",
+   content: `
+  <h1>Events at Tranquility Social Club</h1>
+  
+  <p>At <strong>Tranquility Social Club</strong>, events are at the heart of our community. Members come together to <strong>socialize, relax and enjoy a variety of creative and recreational activities</strong> in a private, welcoming environment.</p>
+  
+  <p>Our events are designed to foster <strong>connection, creativity and fun</strong>. Highlights include:</p>
+  
+  <ul>
+   <li>Themed social gatherings and music nights</li>
+   <li>Jam sessions and live music performances</li>
+   <li>Art and live painting events</li>
+   <li>Game nights with PlayStation, board games and other consoles</li>
+   <li>Pool table competitions and casual tournaments</li>
+   <li>Cozy community meetups and private events</li>
+  </ul>
+  
+  <p>Every event at Tranquility offers a <strong>friendly, inclusive and engaging atmosphere</strong>, making it the perfect space to <strong>meet new friends, share experiences and enjoy your time</strong>.</p>
+  
+  <p>As a <strong>private, non-profit social club</strong>, Tranquility focuses on <strong>providing safe, enjoyable and community-driven experiences</strong> for all members.</p>
+  
+  <p>Whether you’re looking to <strong>explore your creativity, enjoy live music, play games or simply unwind in a welcoming space</strong>, Tranquility Social Club provides a <strong>cozy and inspiring environment</strong> for every member.</p>
+  
+  <p><em>Disclaimer: This content is informational and focuses on community events and amenities. Tranquility Social Club operates as a private, non-profit association in Spain.</em></p>
+  `
+  },
+  {
     slug: "weed-cannabis-marijuana-laws-spain",
     title: "Cannabis, Weed & Marijuana Laws in Spain: A Complete Legal Guide",
     date: "2024-01-18",
